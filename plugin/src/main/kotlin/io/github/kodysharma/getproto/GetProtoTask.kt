@@ -1,4 +1,4 @@
-package com.codeasur
+package io.github.kodysharma.getproto
 
 import com.google.protobuf.DescriptorProtos.DescriptorProto
 import com.google.protobuf.DescriptorProtos.EnumDescriptorProto

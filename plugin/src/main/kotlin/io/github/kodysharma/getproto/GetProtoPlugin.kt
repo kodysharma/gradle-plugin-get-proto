@@ -1,4 +1,4 @@
-package com.codeasur
+package io.github.kodysharma.getproto
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

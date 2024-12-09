@@ -7,7 +7,7 @@ its proto files through reflection service.
 
 ```kotlin
 plugins {
-    id("com.codeasur.getproto") version "0.1.0"
+    id("io.github.kodysharma.getproto") version "0.1.0"
 }
 
 getProto {

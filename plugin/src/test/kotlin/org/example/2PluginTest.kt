@@ -28,7 +28,7 @@ class PluginTest {
     @Test fun `plugin registers task`() {
         // Create a test project and apply the plugin
         val project = ProjectBuilder.builder().build()
-        project.plugins.apply("com.codeasur.getproto")
+        project.plugins.apply("io.github.kodysharma.getproto")
 
         // Verify the result
         assertNotNull(project.tasks.findByName("get-proto"))
@@ -42,7 +42,7 @@ class PluginTest {
 
         buildFile.writeText("""
             plugins {
-                id("com.codeasur.getproto")
+                id("io.github.kodysharma.getproto")
             }
         """.trimIndent())
 
@@ -56,7 +56,7 @@ class PluginTest {
 
         // Create a test project and apply the plugin
         val project = ProjectBuilder.builder().build()
-        project.plugins.apply("com.codeasur.getproto")
+        project.plugins.apply("io.github.kodysharma.getproto")
 
         val result = GradleRunner.create()
             .withProjectDir(testProjectDir)

@@ -8,7 +8,7 @@ plugins {
 }
 
 version = "0.1.0"
-group = "com.codeasur"
+group = "io.github.kodysharma"
 
 dependencies {
     implementation(libs.grpc.netty)
@@ -51,16 +51,15 @@ testing {
 }
 
 gradlePlugin {
-    vcsUrl.set("https://github.com/Neerajsh8851/gradle-plugin-get-proto")
-    website.set("https://github.com/Neerajsh8851/gradle-plugin-get-proto")
+    vcsUrl.set("https://github.com/kodysharma/gradle-plugin-get-proto")
+    website.set("https://github.com/kodysharma/gradle-plugin-get-proto")
 
     val getProto by plugins.creating {
-        id = "com.codeasur.getproto"
-        implementationClass = "com.codeasur.GetProtoPlugin"
+        id = "io.github.kodysharma.getproto"
+        implementationClass = "io.github.kodysharma.getproto.GetProtoPlugin"
         displayName = "GetProto"
         description = "A plugin to generate proto files from a remote server by reflection"
         tags.set(listOf("get-proto", "reflection", "proto", "grpc"))
-
     }
 }
 

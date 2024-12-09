@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "get-proto"
 include("plugin")
-include("reflection-service")
+//include("reflection-service")
