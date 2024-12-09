@@ -7,12 +7,11 @@ its proto files through reflection service.
 
 ```kotlin
 plugins {
-    id("com.github.rahulrv.getproto") version "0.1.0"
+    id("com.codeasur.getproto") version "0.1.0"
 }
 
 getProto {
-    serverHost.set("gupsup-mate.koyeb.app")
-    serverPort.set(443)
+    serverHost = "example.com" // or localhost if you are running locally
+    serverPort = 443
 }
-
 ```
