@@ -5,7 +5,11 @@ plugins {
 
     // Apply the Kotlin JVM plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.plugin.publish)
 }
+
+version = "0.1.0"
+group = "com.codeasur"
 
 dependencies {
     implementation(project(":reflection-service"))
@@ -41,13 +45,16 @@ testing {
 }
 
 gradlePlugin {
-    // define the com.codeasur.getproto plugin
+    vcsUrl.set("https://github.com/Neerajsh8851/gradle-plugin-get-proto")
+    website.set("https://github.com/Neerajsh8851/gradle-plugin-get-proto")
+
     val getProto by plugins.creating {
         id = "com.codeasur.getproto"
         implementationClass = "com.codeasur.GetProtoPlugin"
         displayName = "GetProto"
         description = "A plugin to generate proto files from a remote server by reflection"
         tags.set(listOf("get-proto", "reflection", "proto", "grpc"))
+
     }
 
 }

@@ -50,8 +50,6 @@ class PluginTest {
             getProto {
                 serverHost.set("gupsup-mate.koyeb.app")
                 serverPort.set(443)
-                outputDir.set("src/main/proto")
-                deadlineTime.set(1000)
             }
         """.trimIndent())
 
